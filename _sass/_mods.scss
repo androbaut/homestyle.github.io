@@ -1,0 +1,231 @@
+//Center Graphics
+#logo,
+#deko,
+#deko_vid{
+  @include margin;
+}
+//Limit logo max/min size
+#logo{
+  width: 20%;
+  max-width: 160px;
+  min-width: 75px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+//Limit deko max/min size
+#deko{
+  max-width: 850px;
+  width: 100%;
+  padding-bottom: 25px;
+}
+#deko_vid{
+  max-width: 1000px;
+  width: 100%;
+}
+#deko_vid{
+  display: block;
+}
+//Center objects
+.center{
+  @include center;
+}
+//Responsive email address
+#email{
+@include responsive-font(2.5vw, 16px, 100px);
+margin-top: 5px;
+}
+//Responsive body text
+.center-div p{
+@include responsive-font(1.2vw, 12px, 40px);
+margin-top: 5px;
+}
+
+.center-div p{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.center-div{
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1400px;
+  height: 27vh;
+  min-height: 260px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+@media (max-width: 500px){
+  //Padding for mobile screens
+  .textdiv{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #mail_mo,#insta{
+    height: 20px;
+  }
+  #mail_mo{
+    margin-top: 13px;
+  }
+  #insta{
+    margin-top: 15px;
+  }
+  #logo{
+    margin-bottom: 10px;
+  }
+}
+//Padding for small-medium screens
+@media (min-width: 501px){
+  .textdiv{
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
+//Responsive copyright
+.copy p{
+@include responsive-font(1.2vw, 12px, 35px);
+margin-top: 5px;
+margin-bottom: 5px;
+}
+//Make contact links grey, remove top/bottom margins
+#insta,
+#mail,
+#mail_mo{
+  color: grey;
+  margin-bottom: 0px;
+}
+//Center font awesome icons
+.social{
+  text-align: center;
+}
+//Include social media styles mixin
+.social .fa{
+  @include social;
+}
+@media (min-width: 501px){
+//Set instragram icon height
+#insta{
+  //line-height: 56px;
+  margin-top: 30px;
+}
+//Set mail icon height
+#mail{
+  //line-height: 53px;
+  margin-top: 27px;
+}
+}
+
+
+//Navigational arrow styles
+#footer{
+  position: fixed;
+  display: block;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  padding-bottom: 25px;
+}
+//Navigational arrow max size
+#footer img{
+  width: 5%;
+  max-width: 30px;
+}
+//@media (max-width: 767px){
+  //#gif{
+   //display: block;
+  //}
+  //#vid{
+    //display: none;
+  //}
+//}
+//@media (min-width: 768px){
+  //#gif{
+    //display: none;
+  //}
+  //#vid{
+    //display: block;
+  //}
+//}
+//Social size control
+@media (max-width: 768px){
+  #mail,
+  #mail_mo,
+  #insta{
+    font-size: 1.4em;
+    width: 15px;
+  }
+}
+//Make social icons fade to #000 on hover
+#insta{
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+#mail,
+#mail_mo{
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+#insta:hover{
+  color: #000;
+}
+#mail_mo:hover{
+  color: #000;
+}
+#mail:hover{
+  color: #000;
+}
+//Remove padding for gif
+#gif .container{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#gif .col-md-12{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+//Hide email link
+#email{
+  display: none;
+}
+
+#mail,
+#mail_mo{
+  display: none;
+}
+@media (max-width: 767px){
+  #mail_mo{
+    display: inline-block;
+  }
+}
+@media (min-width: 768px){
+  #mail{
+    display: inline-block;
+  }
+}
+#section2{
+  background-image: url( "../img/section3.jpg" );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#section3{
+  background-image: url( "../img/section2.jpg" );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

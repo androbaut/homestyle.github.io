@@ -1,0 +1,17 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+  font-family: 'apercu_regular_pro';
+  src: url('../fonts/apercu_regular_pro.eot');
+  src: local('☺'), url('../fonts/apercu_regular_pro.woff') format('woff'), url('../fonts/apercu_regular_pro.ttf') format('truetype'), url('../fonts/apercu_regular_pro.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: 'apercu_regular_pro';
+}
