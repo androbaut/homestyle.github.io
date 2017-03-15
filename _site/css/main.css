@@ -3,6 +3,9 @@ body {
   height: 100%;
   width: 100%; }
 
+#fullpage {
+  background-image: url("../img/homestyle_bg.jpg"); }
+
 @font-face {
   font-family: 'Brown';
   src: url("../fonts/Brown-Regular.eot");
@@ -10,7 +13,8 @@ body {
   font-weight: normal;
   font-style: normal; }
 p {
-  font-family: 'Brown'; }
+  font-family: 'Brown';
+  color: #588654; }
 
 #logo,
 #deko,
@@ -24,18 +28,6 @@ p {
   min-width: 75px;
   margin-bottom: 25px;
   margin-top: 5px; }
-
-#deko {
-  max-width: 850px;
-  width: 100%;
-  padding-bottom: 25px; }
-
-#deko_vid {
-  max-width: 1000px;
-  width: 100%; }
-
-#deko_vid {
-  display: block; }
 
 .center {
   text-align: center; }
@@ -75,7 +67,7 @@ p {
   width: 100%;
   max-width: 1400px;
   height: 27vh;
-  max-height: 130px;
+  max-height: 200px;
   border-radius: 3px;
   text-align: center; }
 
@@ -100,20 +92,20 @@ p {
     padding-left: 25%;
     padding-right: 25%; } }
 .copy p {
-  font-size: 1.2vw;
+  font-size: 0.8vw;
   margin-top: 5px;
   margin-bottom: 5px; }
-  @media (max-width: 1000px) {
+  @media (max-width: 1500px) {
     .copy p {
       font-size: 12px; } }
-  @media (min-width: 2916.66667px) {
+  @media (min-width: 4375px) {
     .copy p {
       font-size: 35px; } }
 
 #insta,
 #mail,
 #mail_mo {
-  color: grey;
+  color: #588654;
   margin-bottom: 0px; }
 
 .social {
@@ -123,7 +115,7 @@ p {
   display: inline-block;
   vertical-align: middle;
   font-size: 2.2em;
-  background-color: #fff;
+  background-color: transparent;
   height: 30px;
   width: 30px;
   margin: 20px 5px; }
@@ -134,19 +126,6 @@ p {
 
   #mail {
     margin-top: 27px; } }
-#footer {
-  position: fixed;
-  display: block;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-  z-index: 100;
-  padding-bottom: 25px; }
-
-#footer img {
-  width: 5%;
-  max-width: 30px; }
-
 @media (max-width: 768px) {
   #mail,
   #mail_mo,
@@ -169,21 +148,13 @@ p {
   transition: .5s; }
 
 #insta:hover {
-  color: #000; }
+  color: #273c26; }
 
 #mail_mo:hover {
-  color: #000; }
+  color: #273c26; }
 
 #mail:hover {
-  color: #000; }
-
-#gif .container {
-  padding-left: 0px;
-  padding-right: 0px; }
-
-#gif .col-md-12 {
-  padding-left: 0px;
-  padding-right: 0px; }
+  color: #273c26; }
 
 #email {
   display: none; }
@@ -198,14 +169,3 @@ p {
 @media (min-width: 768px) {
   #mail {
     display: inline-block; } }
-#section2 {
-  background-image: url("../img/section3.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; }
-
-#section3 {
-  background-image: url("../img/section2.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; }
