@@ -4,7 +4,11 @@ body {
   width: 100%; }
 
 #fullpage {
-  background-image: url("../img/homestyle_bg.jpg"); }
+  background-image: url("../img/homestyle_bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 @font-face {
   font-family: 'Brown';
